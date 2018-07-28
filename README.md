@@ -37,11 +37,11 @@ Hackerspace soteropolitano.
 | ---           | ---						|
 | Jurídico      | [Telegram](https://t.me/raspagemRaulHC)   	|
 | ---           | ---						|
-| Scraping      | server/static/scrapers			|
+| Scraping      | /scrapers					|
 | ---           | ---						|
-| Análise       | server/static/reports/analysis		|
-|               | server/static/reports/data			|
-|               | server/static/reports/outputs                 |
+| Análise       | /server/static/reports/analysis		|
+|               | /server/static/reports/data			|
+|               | /server/static/reports/outputs                 |
 
 
 ---
