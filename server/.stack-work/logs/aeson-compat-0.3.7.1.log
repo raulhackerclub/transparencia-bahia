@@ -1,0 +1,14 @@
+Configuring aeson-compat-0.3.7.1...
+Preprocessing library for aeson-compat-0.3.7.1..
+Building library for aeson-compat-0.3.7.1..
+[1 of 1] Compiling Data.Aeson.Compat ( src/Data/Aeson/Compat.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Aeson/Compat.o )
+
+src/Data/Aeson/Compat.hs:117:1: warning: [-Wunused-imports]
+    The qualified import of ‘Data.Scientific’ is redundant
+      except perhaps to import instances from ‘Data.Scientific’
+    To import instances alone, use: import Data.Scientific()
+    |
+117 | import qualified Data.Scientific as Scientific
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/aeson-compat-0.3.7.1-41DRZ4AC7jMGUFuvam4BlL
+Registering library for aeson-compat-0.3.7.1..

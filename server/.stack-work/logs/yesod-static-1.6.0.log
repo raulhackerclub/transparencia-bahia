@@ -1,0 +1,12 @@
+Configuring yesod-static-1.6.0...
+Preprocessing library for yesod-static-1.6.0..
+Building library for yesod-static-1.6.0..
+[1 of 7] Compiling Yesod.EmbeddedStatic.Types ( Yesod/EmbeddedStatic/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/EmbeddedStatic/Types.o )
+[2 of 7] Compiling Yesod.EmbeddedStatic.Generators ( Yesod/EmbeddedStatic/Generators.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/EmbeddedStatic/Generators.o )
+[3 of 7] Compiling Yesod.Static     ( Yesod/Static.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/Static.o )
+[4 of 7] Compiling Yesod.EmbeddedStatic.Internal ( Yesod/EmbeddedStatic/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/EmbeddedStatic/Internal.o )
+[5 of 7] Compiling Yesod.EmbeddedStatic ( Yesod/EmbeddedStatic.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/EmbeddedStatic.o )
+[6 of 7] Compiling Yesod.EmbeddedStatic.Css.Util ( Yesod/EmbeddedStatic/Css/Util.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/EmbeddedStatic/Css/Util.o )
+[7 of 7] Compiling Yesod.EmbeddedStatic.Css.AbsoluteUrl ( Yesod/EmbeddedStatic/Css/AbsoluteUrl.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Yesod/EmbeddedStatic/Css/AbsoluteUrl.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/yesod-static-1.6.0-Ee5dGqFcJtQKJv5Fx2avgL
+Registering library for yesod-static-1.6.0..

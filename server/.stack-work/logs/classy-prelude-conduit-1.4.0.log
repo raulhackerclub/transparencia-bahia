@@ -1,0 +1,7 @@
+Configuring classy-prelude-conduit-1.4.0...
+Preprocessing library for classy-prelude-conduit-1.4.0..
+Building library for classy-prelude-conduit-1.4.0..
+[1 of 2] Compiling ClassyPrelude.Conduit ( src/ClassyPrelude/Conduit.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/ClassyPrelude/Conduit.o )
+[2 of 2] Compiling Paths_classy_prelude_conduit ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/Paths_classy_prelude_conduit.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Paths_classy_prelude_conduit.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/classy-prelude-conduit-1.4.0-EzPdzNk0YIRAFO0cBXm0Ro
+Registering library for classy-prelude-conduit-1.4.0..

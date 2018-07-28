@@ -1,0 +1,47 @@
+Configuring monad-logger-0.3.28.5...
+Preprocessing library for monad-logger-0.3.28.5..
+Building library for monad-logger-0.3.28.5..
+[1 of 3] Compiling Control.Monad.Logger ( Control/Monad/Logger.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Monad/Logger.o )
+
+Control/Monad/Logger.hs:133:1: warning: [-Wdeprecations]
+    Module ‘Control.Monad.Trans.Error’ is deprecated:
+      Use Control.Monad.Trans.Except instead
+    |
+133 | import Control.Monad.Trans.Error    ( ErrorT, Error)
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Control/Monad/Logger.hs:231:26: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+231 | instance (MonadLogger m, Error e) => MonadLogger (ErrorT e m) where DEF
+    |                          ^^^^^
+
+Control/Monad/Logger.hs:231:51: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+231 | instance (MonadLogger m, Error e) => MonadLogger (ErrorT e m) where DEF
+    |                                                   ^^^^^^
+
+Control/Monad/Logger.hs:249:28: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘Error’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+249 | instance (MonadLoggerIO m, Error e) => MonadLoggerIO (ErrorT e m)
+    |                            ^^^^^
+
+Control/Monad/Logger.hs:249:55: warning: [-Wdeprecations]
+    In the use of type constructor or class ‘ErrorT’
+    (imported from Control.Monad.Trans.Error):
+    Deprecated: "Use Control.Monad.Trans.Except instead"
+    |
+249 | instance (MonadLoggerIO m, Error e) => MonadLoggerIO (ErrorT e m)
+    |                                                       ^^^^^^
+[2 of 3] Compiling Control.Monad.Logger.CallStack ( Control/Monad/Logger/CallStack.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/Monad/Logger/CallStack.o )
+[3 of 3] Compiling Paths_monad_logger ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/Paths_monad_logger.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Paths_monad_logger.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/monad-logger-0.3.28.5-ALE9beFp5m4BmMHYqqo8En
+Registering library for monad-logger-0.3.28.5..

@@ -1,0 +1,6 @@
+Configuring warp-tls-3.2.4.3...
+Preprocessing library for warp-tls-3.2.4.3..
+Building library for warp-tls-3.2.4.3..
+[1 of 1] Compiling Network.Wai.Handler.WarpTLS ( Network/Wai/Handler/WarpTLS.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Wai/Handler/WarpTLS.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/warp-tls-3.2.4.3-LFeUU5PlbHB1iUxdDCU23P
+Registering library for warp-tls-3.2.4.3..

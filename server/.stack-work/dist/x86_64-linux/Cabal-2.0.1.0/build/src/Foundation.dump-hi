@@ -1,0 +1,433 @@
+
+==================== FINAL INTERFACE ====================
+2018-07-28 20:38:52.954543 UTC
+
+interface pvota-0.0.0-CaLrbgIdV5g1zNqUBiwLJT:Foundation [family instance module] 8022
+  interface hash: 3de882cdcc18d0022e9c3a1580546277
+  ABI hash: ff7e4f278579e848fe2e48bbe3262abc
+  export-list hash: fa5ed0e772027d075a0a359daef8e92a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: dba840a155bb2f1632231bc23003aec6
+  sig of: Nothing
+  used TH splices: True
+  where
+exports:
+  Foundation.resourcesApp
+  Foundation.unsafeHandler
+  Foundation.App{Foundation.App appHttpManager appLogger appSettings appStatic}
+  Foundation.Handler
+  Foundation.MenuItem{Foundation.MenuItem menuItemAccessCallback menuItemLabel menuItemRoute}
+  Foundation.MenuTypes{Foundation.NavbarLeft Foundation.NavbarRight}
+  Foundation.Widget
+  Yesod.Routes.Class.Route{Foundation.DatasetR Foundation.FaviconR Foundation.HomeR Foundation.ReportR Foundation.RobotsR Foundation.StaticR}
+module dependencies: Import.NoFoundation Settings
+                     Settings.StaticFiles
+package dependencies: StateVar-1.1.1.0 adjunctions-4.4
+                      aeson-1.2.4.0 aeson-compat-0.3.7.1 ansi-terminal-0.8.0.2
+                      appar-0.1.4 array-0.5.2.0 asn1-encoding-0.9.5 asn1-parse-0.9.4
+                      asn1-types-0.3.2 async-2.1.1.1 attoparsec-0.13.2.2
+                      attoparsec-iso8601-1.0.0.0 auto-update-0.1.4 base-4.10.1.0
+                      base-compat-0.9.3 base-orphans-0.7 base64-bytestring-1.0.0.1
+                      basement-0.0.7 basic-prelude-0.7.0 bifunctors-5.5.2 binary-0.8.5.1
+                      blaze-builder-0.4.1.0 blaze-html-0.9.0.1 blaze-markup-0.8.2.1
+                      bsb-http-chunked-0.0.0.2 byteable-0.1.1 byteorder-1.0.4
+                      bytestring-0.10.8.2 case-insensitive-1.2.0.11 cereal-0.5.5.0
+                      chunked-data-0.3.1 cipher-aes-0.2.11 classy-prelude-1.4.0
+                      classy-prelude-conduit-1.4.0 classy-prelude-yesod-1.4.0
+                      clientsession-0.9.1.2 colour-2.3.4 comonad-5.0.3 conduit-1.3.0.2
+                      conduit-extra-1.3.0 connection-0.2.8 containers-0.5.10.2
+                      contravariant-1.4.1 cookie-0.4.4 cprng-aes-0.6.1 crypto-api-0.13.3
+                      crypto-cipher-types-0.0.9 crypto-random-0.0.9 cryptonite-0.25
+                      cryptonite-conduit-0.2.2 css-text-0.1.3.0 data-default-0.7.1.1
+                      data-default-class-0.1.2.0 data-default-instances-containers-0.0.1
+                      data-default-instances-dlist-0.0.1
+                      data-default-instances-old-locale-0.0.1 deepseq-1.4.3.0
+                      deepseq-generics-0.2.0.0 directory-1.3.0.2 distributive-0.5.3
+                      dlist-0.8.0.4 dlist-instances-0.1.1.1 easy-file-0.2.1
+                      email-validate-2.3.2.5 entropy-0.3.8 exceptions-0.8.3
+                      fast-logger-2.4.11 file-embed-0.0.10.1 filepath-1.4.1.2 free-5.0.2
+                      ghc-boot-th-8.2.2 ghc-prim-0.5.1.1 hashable-1.2.7.0
+                      haskell-src-exts-1.20.2 haskell-src-meta-0.8.0.2 hjsmin-0.2.0.2
+                      hourglass-0.2.11 http-api-data-0.3.7.2 http-client-0.5.12.1
+                      http-client-tls-0.3.5.3 http-conduit-2.3.1 http-date-0.0.7
+                      http-types-0.12.1 http2-1.6.3 integer-gmp-1.0.1.0
+                      integer-logarithms-1.0.2.1 iproute-1.7.4 kan-extensions-5.1
+                      keys-3.12 language-javascript-0.6.0.11 lifted-base-0.2.3.12
+                      memory-0.14.16 mime-types-0.1.0.7 monad-control-1.0.2.3
+                      monad-logger-0.3.28.5 monad-loops-0.4.3 mono-traversable-1.0.8.1
+                      mono-traversable-instances-0.1.0.0 mtl-2.2.2
+                      mutable-containers-0.3.4 network-2.6.3.5 network-uri-2.6.1.0
+                      old-locale-1.0.0.7 old-time-1.1.0.3 parsec-3.1.13.0
+                      path-pieces-0.2.1 pem-0.2.4 persistent-2.8.2
+                      persistent-template-2.5.4 pointed-5.0.1 pretty-1.1.3.3
+                      primitive-0.6.3.0 process-1.6.1.0 profunctors-5.2.2
+                      psqueues-0.2.6.0 random-1.1 resource-pool-0.2.3.2 resourcet-1.2.1
+                      safe-0.3.17 say-0.1.0.0 scientific-0.3.5.3 securemem-0.1.10
+                      semigroupoids-5.2.2 shakespeare-2.0.15 silently-1.2.5
+                      simple-sendfile-0.2.27 skein-1.0.9.4 socks-0.5.6 split-0.2.3.3
+                      stm-2.4.5.0 stm-chans-3.0.0.4 streaming-commons-0.1.19
+                      stringsearch-0.3.6.6 tagged-0.8.5 tagsoup-0.14.6
+                      template-haskell-2.12.0.0 text-1.2.3.0 time-1.8.0.2
+                      time-locale-compat-0.1.1.4 tls-1.4.1 transformers-0.5.2.0
+                      transformers-base-0.4.4 transformers-compat-0.5.1.4 unix-2.7.2.2
+                      unix-compat-0.5.0.1 unix-time-0.3.8 unliftio-0.2.7.0
+                      unliftio-core-0.1.1.0 unordered-containers-0.2.9.0
+                      utf8-string-1.0.1.1 uuid-types-1.0.3 vault-0.3.1.0 vector-0.12.0.1
+                      vector-algorithms-0.7.0.1 vector-instances-3.4 wai-3.2.1.2
+                      wai-app-static-3.1.6.2 wai-extra-3.0.22.0 wai-logger-2.3.2
+                      warp-3.2.22 word8-0.1.3 x509-1.7.3 x509-store-1.6.6
+                      x509-system-1.6.6 x509-validation-1.6.10 xml-conduit-1.8.0
+                      xml-types-0.3.6 xss-sanitize-0.3.5.7 yaml-0.8.29 yesod-1.6.0
+                      yesod-core-1.6.4 yesod-form-1.6.1 yesod-newsfeed-1.6.1.0
+                      yesod-persistent-1.6.0 yesod-static-1.6.0 zlib-0.6.2
+orphans: mono-traversable-instances-0.1.0.0:Data.MonoTraversable.Instances
+         vector-instances-3.4:Data.Vector.Instances
+         base-orphans-0.7:Data.Orphans
+         persistent-template-2.5.4:Database.Persist.TH
+         http-client-0.5.12.1:Network.HTTP.Client.Request
+         haskell-src-exts-1.20.2:Language.Haskell.Exts.Parser
+         persistent-2.8.2:Database.Persist.Sql.Orphan.PersistQuery
+         persistent-2.8.2:Database.Persist.Sql.Orphan.PersistUnique
+         persistent-2.8.2:Database.Persist.Sql.Orphan.PersistStore
+         data-default-instances-containers-0.0.1:Data.Default.Instances.Containers
+         data-default-instances-dlist-0.0.1:Data.Default.Instances.DList
+         data-default-instances-old-locale-0.0.1:Data.Default.Instances.OldLocale
+         colour-2.3.4:Data.Colour crypto-api-0.13.3:Crypto.Classes
+         basement-0.0.7:Basement.UArray.Base basement-0.0.7:Basement.Block
+         attoparsec-0.13.2.2:Data.Attoparsec.Text.Internal
+         attoparsec-0.13.2.2:Data.Attoparsec.ByteString.Char8
+         vector-0.12.0.1:Data.Vector.Unboxed
+         vector-0.12.0.1:Data.Vector.Fusion.Bundle
+         time-1.8.0.2:Data.Time.Format.Parse
+         time-1.8.0.2:Data.Time.LocalTime.Internal.ZonedTime
+         time-1.8.0.2:Data.Time.LocalTime.Internal.LocalTime
+         time-1.8.0.2:Data.Time.Calendar.Gregorian
+         unix-time-0.3.8:Data.UnixTime.Diff stm-2.4.5.0:Control.Monad.STM
+         transformers-0.5.2.0:Control.Monad.Trans.Error
+         network-2.6.3.5:Network.Socket
+         hashable-1.2.7.0:Data.Hashable.Generic text-1.2.3.0:Data.Text.Lazy
+         text-1.2.3.0:Data.Text binary-0.8.5.1:Data.Binary.Generic
+         text-1.2.3.0:Data.Text.Show
+         bytestring-0.10.8.2:Data.ByteString.Builder base-4.10.1.0:GHC.Float
+         base-4.10.1.0:GHC.Base
+family instance modules: adjunctions-4.4:Data.Functor.Rep
+                         aeson-1.2.4.0:Data.Aeson.Types.Internal
+                         attoparsec-0.13.2.2:Data.Attoparsec.Internal.Types
+                         base-4.10.1.0:Control.Applicative base-4.10.1.0:Data.Complex
+                         base-4.10.1.0:Data.Either base-4.10.1.0:Data.Functor.Compose
+                         base-4.10.1.0:Data.Functor.Const
+                         base-4.10.1.0:Data.Functor.Identity
+                         base-4.10.1.0:Data.Functor.Product base-4.10.1.0:Data.Functor.Sum
+                         base-4.10.1.0:Data.List.NonEmpty base-4.10.1.0:Data.Monoid
+                         base-4.10.1.0:Data.Semigroup base-4.10.1.0:Data.Type.Equality
+                         base-4.10.1.0:Data.Version base-4.10.1.0:Data.Void
+                         base-4.10.1.0:GHC.Exts base-4.10.1.0:GHC.Generics
+                         base-4.10.1.0:GHC.IO.Exception base-4.10.1.0:GHC.TypeLits
+                         base-4.10.1.0:GHC.TypeNats basement-0.0.7:Basement.Block.Base
+                         basement-0.0.7:Basement.Monad
+                         basement-0.0.7:Basement.MutableBuilder basement-0.0.7:Basement.Nat
+                         basement-0.0.7:Basement.NonEmpty
+                         basement-0.0.7:Basement.Numerical.Subtractive
+                         basement-0.0.7:Basement.PrimType basement-0.0.7:Basement.String
+                         basement-0.0.7:Basement.String.Encoding.ASCII7
+                         basement-0.0.7:Basement.String.Encoding.ISO_8859_1
+                         basement-0.0.7:Basement.String.Encoding.UTF16
+                         basement-0.0.7:Basement.String.Encoding.UTF32
+                         basement-0.0.7:Basement.Types.OffsetSize
+                         basement-0.0.7:Basement.UArray.Base
+                         basement-0.0.7:Basement.UTF8.Base
+                         bifunctors-5.5.2:Data.Bifunctor.Biff
+                         bifunctors-5.5.2:Data.Bifunctor.Clown
+                         bifunctors-5.5.2:Data.Bifunctor.Flip
+                         bifunctors-5.5.2:Data.Bifunctor.Join
+                         bifunctors-5.5.2:Data.Bifunctor.Joker
+                         bifunctors-5.5.2:Data.Bifunctor.Product
+                         bifunctors-5.5.2:Data.Bifunctor.Sum
+                         bifunctors-5.5.2:Data.Bifunctor.Tannen
+                         bifunctors-5.5.2:Data.Bifunctor.Wrapped
+                         conduit-1.3.0.2:Data.Conduit.Internal.Conduit
+                         conduit-1.3.0.2:Data.Conduit.Internal.Pipe
+                         containers-0.5.10.2:Data.IntMap.Internal
+                         containers-0.5.10.2:Data.IntSet.Internal
+                         containers-0.5.10.2:Data.Map.Internal
+                         containers-0.5.10.2:Data.Sequence.Internal
+                         containers-0.5.10.2:Data.Set.Internal containers-0.5.10.2:Data.Tree
+                         cryptonite-0.25:Crypto.ECC cryptonite-0.25:Crypto.Error.Types
+                         cryptonite-0.25:Crypto.Hash.Blake2
+                         cryptonite-0.25:Crypto.Hash.Blake2b
+                         cryptonite-0.25:Crypto.Hash.Blake2bp
+                         cryptonite-0.25:Crypto.Hash.Blake2s
+                         cryptonite-0.25:Crypto.Hash.Blake2sp
+                         cryptonite-0.25:Crypto.Hash.Keccak cryptonite-0.25:Crypto.Hash.MD2
+                         cryptonite-0.25:Crypto.Hash.MD4 cryptonite-0.25:Crypto.Hash.MD5
+                         cryptonite-0.25:Crypto.Hash.RIPEMD160
+                         cryptonite-0.25:Crypto.Hash.SHA1 cryptonite-0.25:Crypto.Hash.SHA224
+                         cryptonite-0.25:Crypto.Hash.SHA256 cryptonite-0.25:Crypto.Hash.SHA3
+                         cryptonite-0.25:Crypto.Hash.SHA384
+                         cryptonite-0.25:Crypto.Hash.SHA512
+                         cryptonite-0.25:Crypto.Hash.SHA512t
+                         cryptonite-0.25:Crypto.Hash.SHAKE
+                         cryptonite-0.25:Crypto.Hash.Skein256
+                         cryptonite-0.25:Crypto.Hash.Skein512
+                         cryptonite-0.25:Crypto.Hash.Tiger
+                         cryptonite-0.25:Crypto.Hash.Whirlpool dlist-0.8.0.4:Data.DList
+                         email-validate-2.3.2.5:Text.Email.Parser
+                         free-5.0.2:Control.Comonad.Cofree free-5.0.2:Control.Monad.Free
+                         free-5.0.2:Control.Monad.Trans.Free
+                         ghc-boot-th-8.2.2:GHC.ForeignSrcLang.Type
+                         ghc-boot-th-8.2.2:GHC.LanguageExtensions.Type
+                         haskell-src-exts-1.20.2:Language.Haskell.Exts.SrcLoc
+                         haskell-src-exts-1.20.2:Language.Haskell.Exts.Syntax
+                         http-client-0.5.12.1:Network.HTTP.Client iproute-1.7.4:Data.IP.Addr
+                         iproute-1.7.4:Data.IP.Range kan-extensions-5.1:Data.Functor.Day
+                         keys-3.12:Data.Key
+                         monad-control-1.0.2.3:Control.Monad.Trans.Control
+                         monad-logger-0.3.28.5:Control.Monad.Logger
+                         mono-traversable-1.0.8.1:Data.Containers
+                         mono-traversable-1.0.8.1:Data.MonoTraversable
+                         mono-traversable-1.0.8.1:Data.NonNull
+                         mono-traversable-1.0.8.1:Data.Sequences
+                         mono-traversable-instances-0.1.0.0:Data.MonoTraversable.Instances
+                         mutable-containers-0.3.4:Data.Mutable.BRef
+                         mutable-containers-0.3.4:Data.Mutable.Class
+                         mutable-containers-0.3.4:Data.Mutable.DLList
+                         mutable-containers-0.3.4:Data.Mutable.Deque
+                         mutable-containers-0.3.4:Data.Mutable.PRef
+                         mutable-containers-0.3.4:Data.Mutable.SRef
+                         mutable-containers-0.3.4:Data.Mutable.URef
+                         network-uri-2.6.1.0:Network.URI
+                         persistent-2.8.2:Database.Persist.Class.PersistConfig
+                         persistent-2.8.2:Database.Persist.Class.PersistEntity
+                         persistent-2.8.2:Database.Persist.Sql.Orphan.PersistStore
+                         persistent-2.8.2:Database.Persist.Sql.Types.Internal
+                         pretty-1.1.3.3:Text.PrettyPrint.Annotated.HughesPJ
+                         pretty-1.1.3.3:Text.PrettyPrint.HughesPJ
+                         primitive-0.6.3.0:Control.Monad.Primitive
+                         primitive-0.6.3.0:Data.Primitive.Array
+                         primitive-0.6.3.0:Data.Primitive.ByteArray
+                         profunctors-5.2.2:Data.Profunctor.Composition
+                         profunctors-5.2.2:Data.Profunctor.Rep
+                         resourcet-1.2.1:Control.Monad.Trans.Resource.Internal
+                         shakespeare-2.0.15:Text.Internal.Css
+                         shakespeare-2.0.15:Text.Shakespeare tagged-0.8.5:Data.Tagged
+                         template-haskell-2.12.0.0:Language.Haskell.TH.Syntax
+                         text-1.2.3.0:Data.Text text-1.2.3.0:Data.Text.Lazy
+                         unordered-containers-0.2.9.0:Data.HashMap.Base
+                         unordered-containers-0.2.9.0:Data.HashSet
+                         uuid-types-1.0.3:Data.UUID.Types.Internal
+                         uuid-types-1.0.3:Data.UUID.Types.Internal.Builder
+                         vector-0.12.0.1:Data.Vector vector-0.12.0.1:Data.Vector.Primitive
+                         vector-0.12.0.1:Data.Vector.Storable
+                         vector-0.12.0.1:Data.Vector.Unboxed
+                         vector-0.12.0.1:Data.Vector.Unboxed.Base
+                         vector-instances-3.4:Data.Vector.Instances
+                         xml-types-0.3.6:Data.XML.Types
+                         yesod-core-1.6.4:Yesod.Core.Class.Handler
+                         yesod-core-1.6.4:Yesod.Core.Internal.LiteApp
+                         yesod-core-1.6.4:Yesod.Core.Types yesod-static-1.6.0:Yesod.Static
+                         zlib-0.6.2:Codec.Compression.Zlib.Stream
+import  -/  base-4.10.1.0:Control.Category e391ae0ab2b20aef43c0035a99142ed1
+import  -/  base-4.10.1.0:Data.Either d7dae5d9bf298dee616e465c14b5d60e
+import  -/  base-4.10.1.0:Data.Foldable 9ed87455d68e87ff2b5b8725eae9897e
+import  -/  base-4.10.1.0:Data.Functor 2ffda4f936b8f474394d93205750aff3
+import  -/  base-4.10.1.0:Data.Tuple 8fa1305aa5032ea35e2a54fa5f1e78f9
+import  -/  base-4.10.1.0:GHC.Base 782fd99b5e36f3698a26179a49afca64
+import  -/  base-4.10.1.0:GHC.Err 514b3a24b22e9d7d731c2d0d02d10842
+import  -/  base-4.10.1.0:GHC.Read 0abfbe8a9b13202e313efc3bc2f2a3e6
+import  -/  base-4.10.1.0:GHC.Show 0a8ce2b5e533d1c2cfb7954e6736be45
+import  -/  base-4.10.1.0:Text.ParserCombinators.ReadPrec 043a8dc96e82690dac5a09fb8e44e9bc
+import  -/  base-4.10.1.0:Text.Read.Lex aff0420c14a3e1f3bb0ee26cd0646682
+import  -/  basic-prelude-0.7.0:CorePrelude 204dd12fa827d6d6fc1668cfcb3794da
+import  -/  blaze-html-0.9.0.1:Text.Blaze.Html 468aab522c7592fdb73824e7b322b38c
+import  -/  blaze-markup-0.8.2.1:Text.Blaze.Internal 859bd4d6b8178868c6ae28cbb7cd7ff0
+import  -/  case-insensitive-1.2.0.11:Data.CaseInsensitive b6f9ade0a148b0644abefa85faac5138
+import  -/  case-insensitive-1.2.0.11:Data.CaseInsensitive.Internal 76b8af1b4466fb80f582505b592f0720
+import  -/  classy-prelude-1.4.0:ClassyPrelude 94ca66bb95645fe3793bdc39d5b11165
+import  -/  containers-0.5.10.2:Data.Set.Internal b207250e4d0053f17172bfafbcd5c82f
+import  -/  ghc-prim-0.5.1.1:GHC.Classes 93e2660065dce9329577e83d76d8f0d4
+import  -/  ghc-prim-0.5.1.1:GHC.Types b1fd0716441595db508c1a74387bf394
+import  -/  hjsmin-0.2.0.2:Text.Jasmine 81fbfd11e46dd9714e4dc12eb8249b94
+import  -/  http-client-0.5.12.1:Network.HTTP.Client.Types f11e3d9808ae313374f1c30aa8de9a75
+import  -/  monad-logger-0.3.28.5:Control.Monad.Logger 5fa00feb21a0d9819cdb0d62cffb0bb8
+import  -/  Import.NoFoundation f3e792532af4f9d938369407a55a6de5
+  exports: bdcb7ecf47c951625cb7b1c7458015ec
+import  -/  Settings 381b65593906096506646cd23b9c507e
+  AppSettings 2c400b88e296e734580b24a19c375513
+  appAnalytics 2c400b88e296e734580b24a19c375513
+  appCopyright 2c400b88e296e734580b24a19c375513
+  appRoot 2c400b88e296e734580b24a19c375513
+  appShouldLogAll 2c400b88e296e734580b24a19c375513
+  appStaticDir 2c400b88e296e734580b24a19c375513
+  widgetFile ff057163023eaa7dc85a901b297eda50
+import  -/  Settings.StaticFiles 8f40e5aed69c22296b8f9b63c67e26ee
+  css_bootstrap_css bb38f672d1de44129cadae500aac27de
+  header_jpg 374bb992da6f5337a2d31c40e2ca9c19
+import  -/  shakespeare-2.0.15:Text.Hamlet 6dd388dd5e990449930582187285936a
+import  -/  shakespeare-2.0.15:Text.Internal.Css c2e9b2db49d306ff17268ffdeff119c7
+import  -/  shakespeare-2.0.15:Text.Lucius 2e05b8a38c86f4de1cd9a6a4614357ec
+import  -/  shakespeare-2.0.15:Text.Shakespeare.Base 933cbed2065851eac40f7eed9af60f00
+import  -/  text-1.2.3.0:Data.Text 0519455f2b04d2a7315c2959461dd14e
+import  -/  text-1.2.3.0:Data.Text.Encoding 1883f408b7c463836758a0e7407807ac
+import  -/  text-1.2.3.0:Data.Text.Internal 5d98ec4bb692174ed69de0b9299773d5
+import  -/  yesod-1.6.0:Yesod.Default.Util 065a3cf300cfcd266338d5851ed9e149
+import  -/  yesod-core-1.6.4:Yesod.Core.Class.Breadcrumbs 3fa66d4ef0398da4156782cb6dbfea5a
+import  -/  yesod-core-1.6.4:Yesod.Core.Class.Yesod 9c92e2ce6d3fc34e1c1f3d41487afd77
+import  -/  yesod-core-1.6.4:Yesod.Core.Content 99085e024f56ed6d251aed1e36b423aa
+import  -/  yesod-core-1.6.4:Yesod.Core.Handler b003cf2a51cbfc25953c9f555517fdfa
+import  -/  yesod-core-1.6.4:Yesod.Core.Internal.TH e0ae332179d5e06f9f881a32b8135bca
+import  -/  yesod-core-1.6.4:Yesod.Core.Types 124ffb4eb11993db61d482f852a9dc66
+import  -/  yesod-core-1.6.4:Yesod.Core.Unsafe 1814fea281e226fc5a79de96a31e0d0e
+import  -/  yesod-core-1.6.4:Yesod.Core.Widget 4bfe5a042b617c0cd5c2bb98ba74130a
+import  -/  yesod-core-1.6.4:Yesod.Routes.Class dcb7ee5cde66f96c70f0de13cfbfa726
+import  -/  yesod-core-1.6.4:Yesod.Routes.Parse 642fca0f5cf7dce2d83ae298d3631b0f
+import  -/  yesod-core-1.6.4:Yesod.Routes.TH.Types ab36617c908f4ffdd9926e3b6327828c
+import  -/  yesod-static-1.6.0:Yesod.Static c4cc2701f97857c23e18163d364f35b0
+addDependentFile "templates/default-layout-wrapper.hamlet"
+addDependentFile "templates/default-layout.hamlet"
+addDependentFile "config/routes"
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fEqRoute ::
+    GHC.Classes.Eq (Yesod.Routes.Class.Route Foundation.App)
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fHasHttpManagerApp ::
+    Network.HTTP.Client.Types.HasHttpManager Foundation.App
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fParseRouteApp :: Yesod.Routes.Class.ParseRoute Foundation.App
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fReadRoute ::
+    GHC.Read.Read (Yesod.Routes.Class.Route Foundation.App)
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fRenderRouteApp :: Yesod.Routes.Class.RenderRoute Foundation.App
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fRouteAttrsApp :: Yesod.Routes.Class.RouteAttrs Foundation.App
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fShowRoute ::
+    GHC.Show.Show (Yesod.Routes.Class.Route Foundation.App)
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fYesodApp :: Yesod.Core.Class.Yesod.Yesod Foundation.App
+  DFunId
+470ed6683a6002130bf4a3b5b32ac8fc
+  $fYesodBreadcrumbsApp ::
+    Yesod.Core.Class.Breadcrumbs.YesodBreadcrumbs Foundation.App
+  DFunId
+ae39aed600e028c5fba4460b9064e26d
+  $tc'App :: GHC.Types.TyCon
+bff8bc04d77a8632f36af2000a578601
+  $tc'DatasetR :: GHC.Types.TyCon
+b1fa44544371901e10c1b852c739b5db
+  $tc'FaviconR :: GHC.Types.TyCon
+8d68eba747baa28adf8fe7c1ed6dcbaf
+  $tc'HomeR :: GHC.Types.TyCon
+0a845a330f87f5636680ad24e43b559b
+  $tc'MenuItem :: GHC.Types.TyCon
+406b5fcc395fe0fe0978c16dd00abac1
+  $tc'NavbarLeft :: GHC.Types.TyCon
+52c0e8b4671426947896ae098bf73a5b
+  $tc'NavbarRight :: GHC.Types.TyCon
+5dbcbb6ec87169b6c4e2b25a27dff442
+  $tc'ReportR :: GHC.Types.TyCon
+106f44b3588133ff70a432ac0ee6282b
+  $tc'RobotsR :: GHC.Types.TyCon
+e3cc7fd89ec4d859430054ccf7f084c7
+  $tc'StaticR :: GHC.Types.TyCon
+cf193a274ce7a4a99477cda07861a462
+  $tcApp :: GHC.Types.TyCon
+ebfb9e1d905f829d2f6a880e16a2051f
+  $tcMenuItem :: GHC.Types.TyCon
+6a6101634ade9afda4628d2c55d76afd
+  $tcMenuTypes :: GHC.Types.TyCon
+7a142fe3c5ae0bc48cf8a11ca021d418
+  $trModule :: GHC.Types.Module
+470ed6683a6002130bf4a3b5b32ac8fc
+  data App
+    = App {appSettings :: Settings.AppSettings,
+           appStatic :: Yesod.Static.Static,
+           appHttpManager :: Network.HTTP.Client.Types.Manager,
+           appLogger :: Yesod.Core.Types.Logger}
+470ed6683a6002130bf4a3b5b32ac8fc
+  axiom Foundation.D:R:RouteApp0::
+      Yesod.Routes.Class.Route Foundation.App = Foundation.R:RouteApp
+2f670f61cefacd54e8e4eb465f6391a9
+  type Handler = Yesod.Core.Types.HandlerFor Foundation.App :: * -> *
+6225e9b8fb6427d0d228aefd9fe51814
+  data MenuItem
+    = MenuItem {menuItemLabel :: Data.Text.Internal.Text,
+                menuItemRoute :: Yesod.Routes.Class.Route Foundation.App,
+                menuItemAccessCallback :: GHC.Types.Bool}
+a60857366d6bad2da6dc3876b28c16b2
+  data MenuTypes
+    = NavbarLeft Foundation.MenuItem | NavbarRight Foundation.MenuItem
+470ed6683a6002130bf4a3b5b32ac8fc
+  data instance Yesod.Routes.Class.Route Foundation.App
+    = StaticR (Yesod.Routes.Class.Route Yesod.Static.Static)
+    | FaviconR
+    | RobotsR
+    | HomeR
+    | ReportR
+    | DatasetR
+bab6201fe8221652c4ebeadc6b7778aa
+  type Widget = Yesod.Core.Types.WidgetFor Foundation.App ()
+470ed6683a6002130bf4a3b5b32ac8fc
+  appHttpManager ::
+    Foundation.App -> Network.HTTP.Client.Types.Manager
+  RecSel Left Foundation.App
+470ed6683a6002130bf4a3b5b32ac8fc
+  appLogger :: Foundation.App -> Yesod.Core.Types.Logger
+  RecSel Left Foundation.App
+470ed6683a6002130bf4a3b5b32ac8fc
+  appSettings :: Foundation.App -> Settings.AppSettings
+  RecSel Left Foundation.App
+470ed6683a6002130bf4a3b5b32ac8fc
+  appStatic :: Foundation.App -> Yesod.Static.Static
+  RecSel Left Foundation.App
+6225e9b8fb6427d0d228aefd9fe51814
+  menuItemAccessCallback :: Foundation.MenuItem -> GHC.Types.Bool
+  RecSel Left Foundation.MenuItem
+6225e9b8fb6427d0d228aefd9fe51814
+  menuItemLabel :: Foundation.MenuItem -> Data.Text.Internal.Text
+  RecSel Left Foundation.MenuItem
+6225e9b8fb6427d0d228aefd9fe51814
+  menuItemRoute ::
+    Foundation.MenuItem -> Yesod.Routes.Class.Route Foundation.App
+  RecSel Left Foundation.MenuItem
+41d587953588f8d7312712ac00ff26c3
+  resourcesApp ::
+    [Yesod.Routes.TH.Types.ResourceTree GHC.Base.String]
+68e7b54096af5ac3e5e1a9742285f3c8
+  unsafeHandler ::
+    Foundation.App -> Foundation.Handler a -> GHC.Types.IO a
+instance GHC.Classes.Eq [Yesod.Routes.Class.Route]
+  = Foundation.$fEqRoute
+instance Network.HTTP.Client.Types.HasHttpManager [Foundation.App]
+  = Foundation.$fHasHttpManagerApp
+instance Yesod.Routes.Class.ParseRoute [Foundation.App]
+  = Foundation.$fParseRouteApp
+instance GHC.Read.Read [Yesod.Routes.Class.Route]
+  = Foundation.$fReadRoute
+instance Yesod.Routes.Class.RenderRoute [Foundation.App]
+  = Foundation.$fRenderRouteApp
+instance Yesod.Routes.Class.RouteAttrs [Foundation.App]
+  = Foundation.$fRouteAttrsApp
+instance GHC.Show.Show [Yesod.Routes.Class.Route]
+  = Foundation.$fShowRoute
+instance Yesod.Core.Class.Yesod.Yesod [Foundation.App]
+  = Foundation.$fYesodApp
+instance Yesod.Core.Class.Breadcrumbs.YesodBreadcrumbs [Foundation.App]
+  = Foundation.$fYesodBreadcrumbsApp
+family instance Yesod.Routes.Class.Route [Foundation.App]
+  = Foundation.D:R:RouteApp0
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: none
+require own pkg trusted: False
+

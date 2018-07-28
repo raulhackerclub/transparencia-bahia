@@ -1,0 +1,21 @@
+Configuring unliftio-0.2.7.0...
+Preprocessing library for unliftio-0.2.7.0..
+Building library for unliftio-0.2.7.0..
+[ 1 of 16] Compiling Paths_unliftio   ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/Paths_unliftio.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Paths_unliftio.o )
+[ 2 of 16] Compiling UnliftIO.Chan    ( src/UnliftIO/Chan.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Chan.o )
+[ 3 of 16] Compiling UnliftIO.Directory ( src/UnliftIO/Directory.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Directory.o )
+[ 4 of 16] Compiling UnliftIO.Environment ( src/UnliftIO/Environment.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Environment.o )
+[ 5 of 16] Compiling UnliftIO.Exception ( src/UnliftIO/Exception.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Exception.o )
+[ 6 of 16] Compiling UnliftIO.Async   ( src/UnliftIO/Async.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Async.o )
+[ 7 of 16] Compiling UnliftIO.Foreign ( src/UnliftIO/Foreign.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Foreign.o )
+[ 8 of 16] Compiling UnliftIO.IO      ( src/UnliftIO/IO.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/IO.o )
+[ 9 of 16] Compiling UnliftIO.IORef   ( src/UnliftIO/IORef.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/IORef.o )
+[10 of 16] Compiling UnliftIO.MVar    ( src/UnliftIO/MVar.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/MVar.o )
+[11 of 16] Compiling UnliftIO.Concurrent ( src/UnliftIO/Concurrent.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Concurrent.o )
+[12 of 16] Compiling UnliftIO.Process ( src/UnliftIO/Process.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Process.o )
+[13 of 16] Compiling UnliftIO.STM     ( src/UnliftIO/STM.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/STM.o )
+[14 of 16] Compiling UnliftIO.Temporary ( src/UnliftIO/Temporary.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Temporary.o )
+[15 of 16] Compiling UnliftIO.Timeout ( src/UnliftIO/Timeout.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO/Timeout.o )
+[16 of 16] Compiling UnliftIO         ( src/UnliftIO.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/UnliftIO.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/unliftio-0.2.7.0-1Q5tCL94rVs5v7v6Em3tvf
+Registering library for unliftio-0.2.7.0..

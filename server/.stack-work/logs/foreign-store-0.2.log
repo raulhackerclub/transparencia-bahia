@@ -1,0 +1,6 @@
+Configuring foreign-store-0.2...
+Preprocessing library for foreign-store-0.2..
+Building library for foreign-store-0.2..
+[1 of 1] Compiling Foreign.Store    ( src/Foreign/Store.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Foreign/Store.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/foreign-store-0.2-2eZMPhdOJAU5Z3ragfoqpj
+Registering library for foreign-store-0.2..

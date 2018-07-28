@@ -1,0 +1,6 @@
+Configuring mime-types-0.1.0.7...
+Preprocessing library for mime-types-0.1.0.7..
+Building library for mime-types-0.1.0.7..
+[1 of 1] Compiling Network.Mime     ( Network/Mime.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Mime.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/mime-types-0.1.0.7-GTWaalA8h3lKGJVZRtpBT1
+Registering library for mime-types-0.1.0.7..

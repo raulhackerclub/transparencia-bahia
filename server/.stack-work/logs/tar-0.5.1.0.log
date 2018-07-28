@@ -1,0 +1,16 @@
+Configuring tar-0.5.1.0...
+Preprocessing library for tar-0.5.1.0..
+Building library for tar-0.5.1.0..
+[ 1 of 11] Compiling Codec.Archive.Tar.Index.IntTrie ( Codec/Archive/Tar/Index/IntTrie.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Index/IntTrie.o )
+[ 2 of 11] Compiling Codec.Archive.Tar.Index.StringTable ( Codec/Archive/Tar/Index/StringTable.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Index/StringTable.o )
+[ 3 of 11] Compiling Codec.Archive.Tar.Types ( Codec/Archive/Tar/Types.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Types.o )
+[ 4 of 11] Compiling Codec.Archive.Tar.Read ( Codec/Archive/Tar/Read.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Read.o )
+[ 5 of 11] Compiling Codec.Archive.Tar.Pack ( Codec/Archive/Tar/Pack.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Pack.o )
+[ 6 of 11] Compiling Codec.Archive.Tar.Index ( Codec/Archive/Tar/Index.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Index.o )
+[ 7 of 11] Compiling Codec.Archive.Tar.Entry ( Codec/Archive/Tar/Entry.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Entry.o )
+[ 8 of 11] Compiling Codec.Archive.Tar.Check ( Codec/Archive/Tar/Check.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Check.o )
+[ 9 of 11] Compiling Codec.Archive.Tar.Unpack ( Codec/Archive/Tar/Unpack.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Unpack.o )
+[10 of 11] Compiling Codec.Archive.Tar.Write ( Codec/Archive/Tar/Write.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar/Write.o )
+[11 of 11] Compiling Codec.Archive.Tar ( Codec/Archive/Tar.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Codec/Archive/Tar.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/tar-0.5.1.0-60eDJG9H72nHOuR0SQ7KSe
+Registering library for tar-0.5.1.0..

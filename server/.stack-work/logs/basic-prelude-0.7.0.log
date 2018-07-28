@@ -1,0 +1,8 @@
+Configuring basic-prelude-0.7.0...
+Preprocessing library for basic-prelude-0.7.0..
+Building library for basic-prelude-0.7.0..
+[1 of 3] Compiling CorePrelude      ( src/CorePrelude.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/CorePrelude.o )
+[2 of 3] Compiling BasicPrelude     ( src/BasicPrelude.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/BasicPrelude.o )
+[3 of 3] Compiling Paths_basic_prelude ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/Paths_basic_prelude.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Paths_basic_prelude.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/basic-prelude-0.7.0-FhIJxWZ19l1JzixKaTtTIu
+Registering library for basic-prelude-0.7.0..

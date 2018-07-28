@@ -1,0 +1,8 @@
+Configuring css-text-0.1.3.0...
+Preprocessing library for css-text-0.1.3.0..
+Building library for css-text-0.1.3.0..
+[1 of 3] Compiling Paths_css_text   ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/Paths_css_text.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Paths_css_text.o )
+[2 of 3] Compiling Text.CSS.Parse   ( src/Text/CSS/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/CSS/Parse.o )
+[3 of 3] Compiling Text.CSS.Render  ( src/Text/CSS/Render.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/CSS/Render.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/css-text-0.1.3.0-ActA0VCWordKpt0b55ozNw
+Registering library for css-text-0.1.3.0..

@@ -1,0 +1,183 @@
+---
+title: "Analise da prova INEP 2015"
+author: "Felipe Argolo (felipe.c.argolo@prontonmail.com)"
+date: "May 9, 2018"
+output: html_document
+---
+```{css}
+pre code, pre, code {
+  white-space: pre !important;
+  overflow-x: scroll !important;
+  word-break: keep-all !important;
+  word-wrap: initial !important;
+}
+```
+
+## Situação das escolas brasileiras segundo o INEP 2015 - *Provinha*
+
+### Dados
+Dados obtidos do portal oficial INEP (http://portal.inep.gov.br/web/guest/inicio).  
+Prova nacional aplicada em 2015. 
+ 
+```{r,include=FALSE,echo = FALSE}
+library(xlsx)
+library(knitr)
+library(purrr)
+library(dplyr)
+library(car)
+library(ggplot2)
+library(kableExtra)
+library(gridExtra)
+
+setwd("~/pvota/static/reports/analysis/")
+inep2015_df <- read.xlsx("../data/saeb/estados-saeb-2015-clean-v2.xlsx",sheetIndex=1)
+```
+
+
+```{r , echo=FALSE}
+inep2015_df_NA <- inep2015_df %>% 
+  purrr::map(function(x) car::recode(x,"0='NA'")) %>%
+  as.data.frame()
+```
+
+### Análises exploratórias
+
+A tabela a seguir apresenta notas para unidades Rurais e Urbanas das redes Privada, Estadual, Municipal e Federal em todas as unidades federativas. Os valores que constam *NA* representam dados perdidos (publicados com valor 0.0).  
+
+#### Urbana
+
+```{r,warning=FALSE,echo=FALSE}
+inep2015_df_NA %>% filter(localizacao %in% c("Urbana") & dependecia_adm %in% c("Estadual","Federal","Municipal","Privada")) %>% select(uf,dependecia_adm,X5o_ano_ling_port,X5o_ano_mat,
+  X9o_ano_ling_port,X9o_ano_mat,X12o_ano_ling_port,X12o_ano_mat) %>% kable(format = "html",col.names = c("Estado","Rede","Port. 5º ano","Mat. 5º ano","Port. 9º ano","Mat. 9º ano","Port. 12º ano","Mat. 12º ano")) %>%
+  kable_styling() %>% scroll_box(width = "800px", height = "250px") 
+```
+  
+  
+#### Rural  
+  
+  
+```{r,warning=FALSE,echo=FALSE}
+inep2015_df_NA %>% filter(localizacao %in% c("Rural") & dependecia_adm %in% c("Estadual","Federal","Municipal","Privada")) %>% select(uf,dependecia_adm,X5o_ano_ling_port,X5o_ano_mat,
+  X9o_ano_ling_port,X9o_ano_mat,X12o_ano_ling_port,X12o_ano_mat) %>% kable(format = "html", col.names = c("Estado","Rede","Port. 5º ano","Mat. 5º ano","Port. 9º ano","Mat. 9º ano","Port. 12º ano","Mat. 12º ano")) %>%
+  kable_styling() %>% scroll_box(width = "800px", height = "250px") 
+```
+  
+  
+### Lígua Portuguesa  
+
+Encontramos valores mais baixos para escolas **Rurais** (vermelho). Escolas Federais apresentam melhor desempenho na rede pública. A rede privada atinge notas maiores no 5o ano.  
+  
+  
+
+```{r,fig.width=14, fig.height=21,warning=FALSE,echo=FALSE}
+mono_inep_2015 <- inep2015_df_NA[(inep2015_df_NA$dependecia_adm %in% c("Estadual","Federal","Municipal","Privada") &
+                                   inep2015_df_NA$localizacao %in%
+                                   c("Rural","Urbana")),]
+
+quinto_port <- ggplot(mono_inep_2015,
+       aes(x=uf,
+           y=as.numeric(as.character(X5o_ano_ling_port)),
+           color=localizacao))+
+  geom_point(mapping=aes(shape=dependecia_adm),size=6,alpha=0.6)+
+  scale_shape(name="Rede de Ensino")+
+  #geom_text(aes(label=dependecia_adm),hjust=0.3, vjust=0,
+  #          position = position_dodge(width = 0.5), 
+  #          size=2.5,color="#000000",alpha=0.7)+
+  scale_color_discrete(name="Tipo")+
+  ylab("Nota - INEP 2015 - Português - 5o Ano")+
+  xlab("Unidade Federativa")+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+nono_port <- ggplot(mono_inep_2015,
+       aes(x=uf,
+           y=as.numeric(as.character(X9o_ano_ling_port)),
+           color=localizacao))+
+  geom_point(mapping=aes(shape=dependecia_adm),size=6,alpha=0.6)+
+  scale_shape(name="Rede de Ensino")+
+  #geom_text(aes(label=dependecia_adm),hjust=0.3, vjust=0,
+  #          position = position_dodge(width = 0.5), 
+  #          size=2.5,color="#000000",alpha=0.7)+
+  scale_color_discrete(name="Tipo")+
+  ylab("Nota - INEP 2015 - Português - 9o Ano")+
+  xlab("Unidade Federativa")+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+decdoc_port <- ggplot(mono_inep_2015,
+       aes(x=uf,
+           y=as.numeric(as.character(X12o_ano_ling_port)),
+           color=localizacao))+
+  geom_point(mapping=aes(shape=dependecia_adm),size=6,alpha=0.6)+
+  scale_shape(name="Rede de Ensino")+
+  #geom_text(aes(label=dependecia_adm),hjust=0.3, vjust=0,
+  #          position = position_dodge(width = 0.5), 
+  #          size=2.5,color="#000000",alpha=0.7)+
+  scale_color_discrete(name="Tipo")+
+  ylab("Nota - INEP 2015 - Português - 12o Ano")+
+  xlab("Unidade Federativa")+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+ 
+gridExtra::grid.arrange(quinto_port,nono_port,decdoc_port,nrow=3)
+```
+  
+  
+### Matemática  
+
+O mesmo padrão é detectado para medições em testes de Matemática: Escolas privadas atingem maiores pontuações no 5º ano, sendo superadas pelas Federais a partir do 9º ano.  Escolas de Zona Rural possuem menores pontuações nas três faixas.
+  
+  
+```{r,fig.width=14, fig.height=21,warning=FALSE,echo=FALSE}
+quinto_mat <- ggplot(mono_inep_2015,
+       aes(x=uf,
+           y=as.numeric(as.character(X5o_ano_mat)),
+           color=localizacao))+
+  geom_point(mapping=aes(shape=dependecia_adm),size=6,alpha=0.6)+
+  scale_shape(name="Rede de Ensino")+
+  #geom_text(aes(label=dependecia_adm),hjust=0.3, vjust=0,
+  #          position = position_dodge(width = 0.5), 
+  #          size=2.5,color="#000000",alpha=0.7)+
+  scale_color_discrete(name="Tipo")+
+  ylab("Nota - INEP 2015 - Matemática - 5o Ano")+
+  xlab("Unidade Federativa")+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+nono_mat <- ggplot(mono_inep_2015,
+       aes(x=uf,
+           y=as.numeric(as.character(X9o_ano_mat)),
+           color=localizacao))+
+  geom_point(mapping=aes(shape=dependecia_adm),size=6,alpha=0.6)+
+  scale_shape(name="Rede de Ensino")+
+  #geom_text(aes(label=dependecia_adm),hjust=0.3, vjust=0,
+  #          position = position_dodge(width = 0.5), 
+  #          size=2.5,color="#000000",alpha=0.7)+
+  scale_color_discrete(name="Tipo")+
+  ylab("Nota - INEP 2015 - Matemática - 9o Ano")+
+  xlab("Unidade Federativa")+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+decdoc_mat <- ggplot(mono_inep_2015,
+       aes(x=uf,
+           y=as.numeric(as.character(X12o_ano_mat)),
+           color=localizacao))+
+  geom_point(mapping=aes(shape=dependecia_adm),size=6,alpha=0.6)+
+  scale_shape(name="Rede de Ensino")+
+  #geom_text(aes(label=dependecia_adm),hjust=0.3, vjust=0,
+  #          position = position_dodge(width = 0.5), 
+  #          size=2.5,color="#000000",alpha=0.7)+
+  scale_color_discrete(name="Tipo")+
+  ylab("Nota - INEP 2015 - Matemática - 12o Ano")+
+  xlab("Unidade Federativa")+
+  theme_bw()+
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
+ 
+gridExtra::grid.arrange(quinto_mat,nono_mat,decdoc_mat,nrow=3)
+```
+
+## Como melhorar o acesso e a qualidade em escolas da rede rural?  
+  
+## O que as escolas federais estão fazendo corretamente?  
+
+## O que as escolas da rede privada (5ª ano) estão fazendo corretamente?
+  

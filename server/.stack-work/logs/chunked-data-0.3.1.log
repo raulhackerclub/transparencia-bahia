@@ -1,0 +1,9 @@
+Configuring chunked-data-0.3.1...
+Preprocessing library for chunked-data-0.3.1..
+Building library for chunked-data-0.3.1..
+[1 of 4] Compiling Data.Builder     ( src/Data/Builder.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Builder.o )
+[2 of 4] Compiling Data.ChunkedZip  ( src/Data/ChunkedZip.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/ChunkedZip.o )
+[3 of 4] Compiling Data.IOData      ( src/Data/IOData.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/IOData.o )
+[4 of 4] Compiling Paths_chunked_data ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/autogen/Paths_chunked_data.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Paths_chunked_data.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/chunked-data-0.3.1-ArIgDWaFsdoHzq50QOjxzy
+Registering library for chunked-data-0.3.1..

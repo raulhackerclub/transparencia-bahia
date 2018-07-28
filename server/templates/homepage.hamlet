@@ -1,0 +1,31 @@
+<div .masthead>
+    <div .container>
+        <div .row>
+            <h1 .header>
+                Transparência Bahia
+            <h2>
+                Dados públicos à disposição dos cidadãos. 
+            <a href="@{ReportR}" .btn.btn-info.btn-lg>
+                Relatório INEP 
+            <a href="@{DatasetR}" .btn.btn-info.btn-lg>
+                Despesas Camara-SSA 
+
+
+<div .container>
+    <!-- Starting
+        ================================================== -->
+    <div .bs-docs-section>
+        <div .row>
+            <div .col-lg-12>
+                <div .page-header>
+                    <h1 #start>Sobre
+
+                    <p>
+                        Fortalecendo a democracia representativa através de jornalismo baseado em dados, acesso aberto e soluções em tecnologia.  
+                    <p>
+                        Uma iniciativa aberta, apoiada por membros do <a href=http://raulhc.cc/>Raul Hacker Club</a> e da <a href=http://osbrasil.org.br/> OSB Brasil. </a> 
+                    <p>
+                        Quer colaborar? Confira nosso <a href=https://github.com/raulhackerclub/camara-vereadores-salvador>repositório</a>.  
+                    <p>
+                        Também pode falar diretamente no grupo aberto via <a href =https://t.me/joinchat/C8ro6A9ZvIBW8uRuBpA7cw>Telegram</a>.  
+    <hr>

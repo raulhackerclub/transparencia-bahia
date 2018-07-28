@@ -1,0 +1,9 @@
+Configuring wai-logger-2.3.2...
+Preprocessing library for wai-logger-2.3.2..
+Building library for wai-logger-2.3.2..
+[1 of 4] Compiling Network.Wai.Logger.IORef ( Network/Wai/Logger/IORef.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Wai/Logger/IORef.o )
+[2 of 4] Compiling Network.Wai.Logger.IP ( Network/Wai/Logger/IP.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Wai/Logger/IP.o )
+[3 of 4] Compiling Network.Wai.Logger.Apache ( Network/Wai/Logger/Apache.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Wai/Logger/Apache.o )
+[4 of 4] Compiling Network.Wai.Logger ( Network/Wai/Logger.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/Wai/Logger.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/wai-logger-2.3.2-8fcTaToF0HyFFvPnF64Lhx
+Registering library for wai-logger-2.3.2..

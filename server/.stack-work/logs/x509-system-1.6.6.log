@@ -1,0 +1,16 @@
+Configuring x509-system-1.6.6...
+Preprocessing library for x509-system-1.6.6..
+Building library for x509-system-1.6.6..
+[1 of 3] Compiling System.X509.MacOS ( System/X509/MacOS.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/X509/MacOS.o )
+
+[;1mSystem/X509/MacOS.hs:8:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m8 |[0m[0m [;1m[35mimport Control.Applicative[0m[0m
+[;1m[34m  |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[2 of 3] Compiling System.X509.Unix ( System/X509/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/X509/Unix.o )
+[3 of 3] Compiling System.X509      ( System/X509.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/X509.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/x509-system-1.6.6-KApNaK1lTsZDPsYiRcvdzF
+Registering library for x509-system-1.6.6..

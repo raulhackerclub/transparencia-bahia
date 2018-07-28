@@ -1,0 +1,21 @@
+Configuring crypto-random-0.0.9...
+Preprocessing library for crypto-random-0.0.9..
+Building library for crypto-random-0.0.9..
+[1 of 8] Compiling Crypto.Random.Entropy.Source ( Crypto/Random/Entropy/Source.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/Entropy/Source.o )
+[2 of 8] Compiling Crypto.Random.Entropy.RDRand ( Crypto/Random/Entropy/RDRand.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/Entropy/RDRand.o )
+[3 of 8] Compiling Crypto.Random.Entropy.Unix ( Crypto/Random/Entropy/Unix.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/Entropy/Unix.o )
+[4 of 8] Compiling Crypto.Random.Entropy ( Crypto/Random/Entropy.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/Entropy.o )
+[5 of 8] Compiling Crypto.Random.Generator ( Crypto/Random/Generator.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/Generator.o )
+[6 of 8] Compiling Crypto.Random    ( Crypto/Random.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random.o )
+[7 of 8] Compiling Crypto.Random.API ( Crypto/Random/API.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/API.o )
+[8 of 8] Compiling Crypto.Random.Test ( Crypto/Random/Test.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Crypto/Random/Test.o )
+
+Crypto/Random/Test.hs:23:1: warning: [-Wunused-imports]
+    The import of ‘Control.Applicative’ is redundant
+      except perhaps to import instances from ‘Control.Applicative’
+    To import instances alone, use: import Control.Applicative()
+   |
+23 | import Control.Applicative
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/crypto-random-0.0.9-7IB4q8H7R73JE2k8lnuio5
+Registering library for crypto-random-0.0.9..

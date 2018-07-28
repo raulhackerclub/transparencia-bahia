@@ -1,0 +1,153 @@
+Configuring shakespeare-2.0.15...
+Preprocessing library for shakespeare-2.0.15..
+Building library for shakespeare-2.0.15..
+[ 1 of 18] Compiling Text.IndentToBrace ( Text/IndentToBrace.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/IndentToBrace.o )
+[ 2 of 18] Compiling Text.MkSizeType  ( Text/MkSizeType.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/MkSizeType.o )
+
+[;1mText/MkSizeType.hs:7:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-imports[0m[0m[;1m][0m[0m[;1m
+    The import of ‘Language.Haskell.TH’ is redundant
+      except perhaps to import instances from ‘Language.Haskell.TH’
+    To import instances alone, use: import Language.Haskell.TH()[0m[0m
+[;1m[34m  |[0m[0m
+[;1m[34m7 |[0m[0m [;1m[35mimport Language.Haskell.TH (conT)[0m[0m
+[;1m[34m  |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^[0m[0m
+[0m[0m[0m[ 3 of 18] Compiling Text.Shakespeare.Base ( Text/Shakespeare/Base.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Shakespeare/Base.o )
+[ 4 of 18] Compiling Text.Shakespeare ( Text/Shakespeare.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Shakespeare.o )
+[ 5 of 18] Compiling Text.Julius      ( Text/Julius.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Julius.o )
+[ 6 of 18] Compiling Text.Roy         ( Text/Roy.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Roy.o )
+[ 7 of 18] Compiling Text.Coffee      ( Text/Coffee.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Coffee.o )
+[ 8 of 18] Compiling Text.Internal.Css ( Text/Internal/Css.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Internal/Css.o )
+
+[;1mText/Internal/Css.hs:346:40: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘subblocks’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m346 |[0m[0m blockToMixin r scope (Block _sel props [;1m[35msubblocks[0m[0m mixins) =
+[;1m[34m    |[0m[0m[;1m[35m                                        ^^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Internal/Css.hs:364:5: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-local-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘subGo’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m364 |[0m[0m     [;1m[35msubGo[0m[0m (Block sel' b c d) = blockToCss r scope $ Block sel' b c d
+[;1m[34m    |[0m[0m[;1m[35m     ^^^^^[0m[0m
+[0m[0m[0m[ 9 of 18] Compiling Text.Internal.CssCommon ( Text/Internal/CssCommon.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Internal/CssCommon.o )
+[10 of 18] Compiling Text.Lucius      ( Text/Lucius.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Lucius.o )
+[11 of 18] Compiling Text.Hamlet.Parse ( Text/Hamlet/Parse.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Hamlet/Parse.o )
+[12 of 18] Compiling Text.Hamlet.RT   ( Text/Hamlet/RT.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Hamlet/RT.o )
+
+[;1mText/Hamlet/RT.hs:80:13: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘x’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m80 |[0m[0m     convert [;1m[35mx[0m[0m@(DocForall deref (BindAs _ _) docs) =
+[;1m[34m   |[0m[0m[;1m[35m             ^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:80:26: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘deref’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m80 |[0m[0m     convert x@(DocForall [;1m[35mderef[0m[0m (BindAs _ _) docs) =
+[;1m[34m   |[0m[0m[;1m[35m                          ^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:80:45: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘docs’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m80 |[0m[0m     convert x@(DocForall deref (BindAs _ _) [;1m[35mdocs[0m[0m) =
+[;1m[34m   |[0m[0m[;1m[35m                                             ^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:87:13: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘x’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m87 |[0m[0m     convert [;1m[35mx[0m[0m@(DocMaybe deref (BindAs _ _) jdocs ndocs) =
+[;1m[34m   |[0m[0m[;1m[35m             ^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:87:25: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘deref’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m87 |[0m[0m     convert x@(DocMaybe [;1m[35mderef[0m[0m (BindAs _ _) jdocs ndocs) =
+[;1m[34m   |[0m[0m[;1m[35m                         ^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:87:44: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘jdocs’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m87 |[0m[0m     convert x@(DocMaybe deref (BindAs _ _) [;1m[35mjdocs[0m[0m ndocs) =
+[;1m[34m   |[0m[0m[;1m[35m                                            ^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:87:50: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘ndocs’[0m[0m
+[;1m[34m   |[0m[0m
+[;1m[34m87 |[0m[0m     convert x@(DocMaybe deref (BindAs _ _) jdocs [;1m[35mndocs[0m[0m) =
+[;1m[34m   |[0m[0m[;1m[35m                                                  ^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet/RT.hs:117:37: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for ‘x’ shadows the existing binding
+      bound at Text/Hamlet/RT.hs:110:13[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m117 |[0m[0m         go (DerefBranch (DerefIdent [;1m[35mx[0m[0m) _, docs') | x == specialOrIdent = do
+[;1m[34m    |[0m[0m[;1m[35m                                     ^[0m[0m
+[0m[0m[0m[13 of 18] Compiling Text.Hamlet      ( Text/Hamlet.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Hamlet.o )
+
+[;1mText/Hamlet.hs:394:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘ixhamlet’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m394 |[0m[0m [;1m[35mixhamlet[0m[0m = hamletWithSettings ihamletRules xhtmlHamletSettings
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:477:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘varName’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m477 |[0m[0m [;1m[35mvarName[0m[0m _ "" = error "Illegal empty varName"
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:481:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-top-binds[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘strToExp’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m481 |[0m[0m [;1m[35mstrToExp[0m[0m s@(c:_)
+[;1m[34m    |[0m[0m[;1m[35m ^^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:514:16: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘html’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m514 |[0m[0m   show (EPlain [;1m[35mhtml[0m[0m) = "EPlain"
+[;1m[34m    |[0m[0m[;1m[35m                ^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:515:14: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘url’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m515 |[0m[0m   show (EUrl [;1m[35murl[0m[0m) = "EUrl"
+[;1m[34m    |[0m[0m[;1m[35m              ^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:516:19: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘url’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m516 |[0m[0m   show (EUrlParam [;1m[35murl[0m[0m) = "EUrlParam"
+[;1m[34m    |[0m[0m[;1m[35m                   ^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:517:16: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘url’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m517 |[0m[0m   show (EMixin [;1m[35murl[0m[0m) = "EMixin"
+[;1m[34m    |[0m[0m[;1m[35m                ^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:518:20: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘msg_url’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m518 |[0m[0m   show (EMixinI18n [;1m[35mmsg_url[0m[0m) = "EMixinI18n"
+[;1m[34m    |[0m[0m[;1m[35m                    ^^^^^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:519:14: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wunused-matches[0m[0m[;1m][0m[0m[;1m
+    Defined but not used: ‘msg’[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m519 |[0m[0m   show (EMsg [;1m[35mmsg[0m[0m) = "EMsg"
+[;1m[34m    |[0m[0m[;1m[35m              ^^^[0m[0m
+[0m[0m[0m
+[;1mText/Hamlet.hs:563:43: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Wname-shadowing[0m[0m[;1m][0m[0m[;1m
+    This binding for ‘c’ shadows the existing binding
+      bound at Text/Hamlet.hs:559:13[0m[0m
+[;1m[34m    |[0m[0m
+[;1m[34m563 |[0m[0m             c VTMixin = [|\r -> EMixin $ \[;1m[35mc[0m[0m -> r c|]
+[;1m[34m    |[0m[0m[;1m[35m                                           ^[0m[0m
+[0m[0m[0m[14 of 18] Compiling Text.Hamlet.Runtime ( Text/Hamlet/Runtime.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Hamlet/Runtime.o )
+[15 of 18] Compiling Text.Cassius     ( Text/Cassius.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Cassius.o )
+[16 of 18] Compiling Text.Shakespeare.I18N ( Text/Shakespeare/I18N.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Shakespeare/I18N.o )
+[17 of 18] Compiling Text.Shakespeare.Text ( Text/Shakespeare/Text.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Shakespeare/Text.o )
+[18 of 18] Compiling Text.TypeScript  ( Text/TypeScript.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/TypeScript.o )
+Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/shakespeare-2.0.15-KTlthC2a96B7UBFF9FGsB9
+Registering library for shakespeare-2.0.15..
