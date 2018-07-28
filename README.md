@@ -41,8 +41,14 @@ Hackerspace soteropolitano.
 | ---           | ---						|
 | Análise       | /server/static/reports/analysis		|
 |               | /server/static/reports/data			|
-|               | /server/static/reports/outputs                 |
-
+|               | /server/static/reports/outputs                |
+| ---           | ---						|
+| Backend	| https://www.yesodweb.com/.                    |
+|               | Cogitamos mudar para Rails ou Django.         |
+| ---           | ---						|
+| Frontend      | /server/templates                             |
+|               | Hamlet (Html), Lucius (CSS), Julius (JS) são  |
+|               | dialetos para reforçar segurança.             |
 
 ---
 Contribuições: *@brunotuy @ladeia @gomex @fargolo @abade @george @albano*
