@@ -7,3 +7,6 @@
 [submodule "scrapers"]
 	path = scrapers
 	url = https://github.com/BrunoTuy/camara-vereadores-salvador
+[submodule "tcm_despesas_municipais"]
+	path = tcm_despesas_municipais
+	url = https://github.com/fargolo/tcm_despesas_municipais
