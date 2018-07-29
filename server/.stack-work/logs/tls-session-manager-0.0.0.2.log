@@ -1,7 +1,0 @@
-Configuring tls-session-manager-0.0.0.2...
-Preprocessing library for tls-session-manager-0.0.0.2..
-Building library for tls-session-manager-0.0.0.2..
-[1 of 2] Compiling Network.TLS.Imports ( Network/TLS/Imports.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/TLS/Imports.o )
-[2 of 2] Compiling Network.TLS.SessionManager ( Network/TLS/SessionManager.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Network/TLS/SessionManager.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/tls-session-manager-0.0.0.2-FPLl3D3J3DNGT4U6zRgcWA
-Registering library for tls-session-manager-0.0.0.2..

@@ -1,6 +1,0 @@
-Configuring vector-instances-3.4...
-Preprocessing library for vector-instances-3.4..
-Building library for vector-instances-3.4..
-[1 of 1] Compiling Data.Vector.Instances ( src/Data/Vector/Instances.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/Vector/Instances.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/vector-instances-3.4-HyxmY5rqltu6zc2FLM9UxR
-Registering library for vector-instances-3.4..

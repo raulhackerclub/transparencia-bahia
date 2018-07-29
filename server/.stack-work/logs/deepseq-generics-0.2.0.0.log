@@ -1,6 +1,0 @@
-Configuring deepseq-generics-0.2.0.0...
-Preprocessing library for deepseq-generics-0.2.0.0..
-Building library for deepseq-generics-0.2.0.0..
-[1 of 1] Compiling Control.DeepSeq.Generics ( Control/DeepSeq/Generics.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Control/DeepSeq/Generics.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/deepseq-generics-0.2.0.0-G98MeMA7TbADTNFPYlzRtE
-Registering library for deepseq-generics-0.2.0.0..

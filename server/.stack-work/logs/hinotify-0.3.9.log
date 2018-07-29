@@ -1,7 +1,0 @@
-Configuring hinotify-0.3.9...
-Preprocessing library for hinotify-0.3.9..
-Building library for hinotify-0.3.9..
-[1 of 2] Compiling System.INotify.Masks ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/INotify/Masks.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/INotify/Masks.o )
-[2 of 2] Compiling System.INotify   ( .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/INotify.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/System/INotify.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/hinotify-0.3.9-EGS0JK3sdmbB9cxB8hIv6q
-Registering library for hinotify-0.3.9..

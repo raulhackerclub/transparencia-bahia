@@ -1,8 +1,0 @@
-Configuring email-validate-2.3.2.5...
-Preprocessing library for email-validate-2.3.2.5..
-Building library for email-validate-2.3.2.5..
-[1 of 3] Compiling Text.Email.Parser ( src/Text/Email/Parser.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Email/Parser.o )
-[2 of 3] Compiling Text.Email.Validate ( src/Text/Email/Validate.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Email/Validate.o )
-[3 of 3] Compiling Text.Email.QuasiQuotation ( src/Text/Email/QuasiQuotation.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Text/Email/QuasiQuotation.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/email-validate-2.3.2.5-JHanKlZ1EtK9ce56eLWu1M
-Registering library for email-validate-2.3.2.5..

@@ -1,0 +1,3 @@
+[submodule "server/pvota"]
+	path = server/pvota
+	url = https://github.com/fargolo/pvota

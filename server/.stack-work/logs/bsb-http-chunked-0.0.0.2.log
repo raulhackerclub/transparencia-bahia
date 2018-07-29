@@ -1,9 +1,0 @@
-Configuring bsb-http-chunked-0.0.0.2...
-Preprocessing library for bsb-http-chunked-0.0.0.2..
-Building library for bsb-http-chunked-0.0.0.2..
-[1 of 4] Compiling Blaze.ByteString.Builder.Internal.Write ( Blaze/ByteString/Builder/Internal/Write.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Blaze/ByteString/Builder/Internal/Write.o )
-[2 of 4] Compiling Blaze.ByteString.Builder.Compat.Write ( Blaze/ByteString/Builder/Compat/Write.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Blaze/ByteString/Builder/Compat/Write.o )
-[3 of 4] Compiling Blaze.ByteString.Builder.Char8 ( Blaze/ByteString/Builder/Char8.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Blaze/ByteString/Builder/Char8.o )
-[4 of 4] Compiling Data.ByteString.Builder.HTTP.Chunked ( Data/ByteString/Builder/HTTP/Chunked.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Data/ByteString/Builder/HTTP/Chunked.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/bsb-http-chunked-0.0.0.2-H3ktYq6qdL78zDrB20Wed
-Registering library for bsb-http-chunked-0.0.0.2..

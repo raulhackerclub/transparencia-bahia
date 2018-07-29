@@ -1,7 +1,0 @@
-Configuring th-reify-many-0.1.8...
-Preprocessing library for th-reify-many-0.1.8..
-Building library for th-reify-many-0.1.8..
-[1 of 2] Compiling Language.Haskell.TH.ReifyMany.Internal ( src/Language/Haskell/TH/ReifyMany/Internal.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/ReifyMany/Internal.o )
-[2 of 2] Compiling Language.Haskell.TH.ReifyMany ( src/Language/Haskell/TH/ReifyMany.hs, .stack-work/dist/x86_64-linux/Cabal-2.0.1.0/build/Language/Haskell/TH/ReifyMany.o )
-Installing library in /home/pingfreud/.stack/snapshots/x86_64-linux/lts-11.7/8.2.2/lib/x86_64-linux-ghc-8.2.2/th-reify-many-0.1.8-55sJUBTewKS5EsM9w7rxqR
-Registering library for th-reify-many-0.1.8..
