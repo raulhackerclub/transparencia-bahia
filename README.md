@@ -39,9 +39,9 @@ Hackerspace soteropolitano.
 | ---           | ---						|
 | Scraping      | /scrapers					|
 | ---           | ---						|
-| Análise       | /server/static/reports/analysis		|
-|               | /server/static/reports/data			|
-|               | /server/static/reports/outputs                |
+| Análise       | /analysis/src		                        |
+|               | /analysis/data			        |
+|               | /server/static/reports	                |
 | ---           | ---						|
 | Backend	| https://www.yesodweb.com/.                    |
 |               | Cogitamos mudar para Rails ou Django.         |
