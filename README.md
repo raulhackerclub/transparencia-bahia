@@ -51,4 +51,4 @@ Hackerspace soteropolitano.
 |               | dialetos para reforçar segurança.             |
 
 ---
-Contribuições: *@brunotuy @ladeia @gomex @fargolo @abade @george @albano*
+Contribuições: *@brunotuy @ladeia @gomex @fargolo @abade @george @albano @Edely*
