@@ -7,8 +7,11 @@
                 Dados públicos à disposição dos cidadãos. 
             <a href="@{ReportR}" .btn.btn-info.btn-lg>
                 Relatório INEP 
-            <a href="@{DatasetR}" .btn.btn-info.btn-lg>
+            <a href="@{CMSSaR}" .btn.btn-info.btn-lg>
                 Despesas Camara-SSA 
+            <a href="@{TCMBaR}" .btn.btn-info.btn-lg>
+                Despesas Camara-SSA 
+
 
 
 <div .container>

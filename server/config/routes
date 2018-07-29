@@ -9,4 +9,5 @@
 / HomeR GET 
 
 /report ReportR GET
-/dataset DatasetR GET
+/CMSSa CMSSaR GET
+/TCMBa TCMBaR GET
