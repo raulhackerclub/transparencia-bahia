@@ -21,7 +21,6 @@ todas_despesas = []
 dados_requisicao = False
 
 def indice_paginador(page):
-	index = 0
 	index = page % 10
 	if page < 12: index= page - 1
 	elif index == 1:index += 10
