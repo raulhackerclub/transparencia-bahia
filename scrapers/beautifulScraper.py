@@ -1,4 +1,13 @@
 #!/usr/bin/python
+# Scraper with Beautiful soup
+# author      : Bruno Tuy
+# requirements: wheel    == 0.31.1
+#               requests == 2.19.1
+#               bs4      == 0.0.1
+#               json
+#               io
+# usage       : From terminal:
+#               $python3 beatifulScrapper.py
 
 import io
 import json
@@ -10,37 +19,28 @@ paginas = []
 todas_despesas = []
 dados_requisicao = False
 
-def indice_paginador(pagina):
-    indice = 0
+def indice_paginador(page):
+	index = 0
+	index = page % 10
+	if page < 12: index= page - 1
+	elif index == 1:index += 10
 
-    if pagina < 12:
-        indice = pagina - 1
-
-    else:
-        indice = pagina % 10
-
-        if indice < 2:
-            indice += 10
-
-    str_indice = str(indice)
-
-    if len(str_indice) == 1:
-        str_indice = '0' + str_indice
-
-    return str_indice
+	str_index = str(index)
+	if len(str_index) == 1: str_index = '0' + str_index
+	return str_index
 
 
-def pagina(params):
-    r = False
-    despesas = []
+	def pagina(params):
+		r = False
+		despesas = []
 
-    if params:
-        pagina = params['pagina']
-        indice = indice_paginador(pagina)
+		if params:
+	pagina = params['pagina']
+indice = indice_paginador(pagina)
 
-        dados = {
-            '__VIEWSTATE': params['viewState'],
-            '__VIEWSTATEGENERATOR': '48B4125A',
+	dados = {
+		'__VIEWSTATE': params['viewState'],
+		'__VIEWSTATEGENERATOR': '48B4125A',
             '__EVENTVALIDATION': params['eventValidation'],
             '__EVENTTARGET':
                 'ctl00$ContentPlaceHolder1$dpNoticia$ctl01$ctl' + indice,
@@ -201,7 +201,7 @@ while True:
         'numero': retorno['paginaAtual'],
         'listaDespesas': despesas_da_pagina
     })
-
+   
     todas_despesas = todas_despesas + despesas_da_pagina
 
     print(' ** HTML ' + str(retorno['paginaAtual']))
@@ -214,7 +214,7 @@ while True:
         'viewState': retorno['viewState'],
         'eventValidation': retorno['eventValidation']
     }
-
+    print('Sleep 0.01 secs')
     time.sleep(0.01)
 
 gerar_json(todas_despesas, 'despesas.json')
