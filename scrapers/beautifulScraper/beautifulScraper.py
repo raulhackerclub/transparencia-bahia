@@ -14,6 +14,7 @@ import json
 import time
 import requests
 from bs4 import BeautifulSoup
+import CleanOutput 
 
 paginas = []
 todas_despesas = []
@@ -30,34 +31,29 @@ def indice_paginador(page):
 	return str_index
 
 
-	def pagina(params):
-		r = False
-		despesas = []
+def pagina(params):
+    r = False
+    despesas = []
 
-		if params:
-	pagina = params['pagina']
-indice = indice_paginador(pagina)
-
-	dados = {
+    if params:
+        pagina = params['pagina']
+        indice = indice_paginador(pagina)
+        dados = {
 		'__VIEWSTATE': params['viewState'],
 		'__VIEWSTATEGENERATOR': '48B4125A',
-            '__EVENTVALIDATION': params['eventValidation'],
-            '__EVENTTARGET':
-                'ctl00$ContentPlaceHolder1$dpNoticia$ctl01$ctl' + indice,
-            'ctl00$ContentPlaceHolder1$ToolkitScriptManager1': 'ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dpNoticia$ctl01$ctl' + indice
-        }
-
-        r = requests.post('http://www.cms.ba.gov.br/despesa.aspx', data=dados)
-
+          '__EVENTVALIDATION': params['eventValidation'],
+          '__EVENTTARGET':
+              'ctl00$ContentPlaceHolder1$dpNoticia$ctl01$ctl' + indice,
+          'ctl00$ContentPlaceHolder1$ToolkitScriptManager1':
+              'ctl00$ContentPlaceHolder1$UpdatePanel1|ctl00$ContentPlaceHolder1$dpNoticia$ctl01$ctl' + indice
+            }
+        r = requests.post('http://www.cms.ba.gov.br/despesa.aspx',
+                          data=dados)
     else:
-        r = requests.get('http://www.cms.ba.gov.br/despesa.aspx')
-
-    parsed_html = BeautifulSoup(r.text, 'html.parser')
-
-    paginador = parsed_html.body.find(
-        'span',
-        attrs={'id': 'ContentPlaceHolder1_dpNoticia'}
-    )
+            r = requests.get('http://www.cms.ba.gov.br/despesa.aspx')
+            parsed_html = BeautifulSoup(r.text, 'html.parser')
+            paginador = parsed_html.body.find('span',
+                                              attrs={'id': 'ContentPlaceHolder1_dpNoticia'})
     pagina_atual = int(paginador.find('span').text)
     links_paginas = paginador.find_all('a')
 
@@ -155,43 +151,6 @@ def processar_despesas(lista, numero_pagina):
 
     return retorno
 
-
-def gerar_json(lista, arquivo):
-    print( ' ** Gerando '+arquivo )
-    try:
-        to_unicode = unicode
-    except NameError:
-        to_unicode = str
-
-    data = {'lista': lista}
-
-    with io.open(arquivo, 'w', encoding='utf8') as outfile:
-        str_ = json.dumps(data,
-                          indent=4, sort_keys=True,
-                          separators=(',', ': '), ensure_ascii=False)
-        outfile.write(to_unicode(str_))
-
-
-def format_coluna_csv(valor):
-    return str(valor).replace('\r', ' ').replace('\n', ' ').replace(';', '\\;')
-
-
-def gerar_csv(lista, arquivo):
-    print( ' ** Gerando '+arquivo )
-
-    f = open(arquivo, 'w')
-    f.write( 'Data;Valor;Tipo;Responsavel;Usuario;Localidade;Justificativa;Pagina\n' )
-
-    for despesa in lista:
-        linha = format_coluna_csv(despesa['Data'])
-        linha = linha + ';' + format_coluna_csv(despesa['Valor'])
-        linha = linha + ';' + format_coluna_csv(despesa['Tipo'])
-        linha = linha + ';' + format_coluna_csv(despesa['Responsavel'])
-        linha = linha + ';' + format_coluna_csv(despesa['Usuario'])
-        linha = linha + ';' + format_coluna_csv(despesa['Localidade'])
-        linha = linha + ';' + format_coluna_csv(despesa['Justificativa'])
-        linha = linha + ';' + format_coluna_csv(despesa['Pagina'])
-        f.write(linha+'\n')
 
 
 while True:
