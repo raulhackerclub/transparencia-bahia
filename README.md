@@ -13,7 +13,7 @@ Felizmente, a comunidade está se engajando  bastante.
 
 * Dados do TCM-BA
 - [X] Crawler com rvest - Contribuições da OSB-BA (a ser importado).  	
-- [ ] Importar para servidor.  
+- [X] Importar para repositório.  
 
 * Jurídico
 - [ ] Determinar normas para os dados levantados.  
