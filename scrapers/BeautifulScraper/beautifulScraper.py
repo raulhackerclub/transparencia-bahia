@@ -23,7 +23,7 @@ dados_requisicao = False
 def indice_paginador(page):
 	index = page % 10
 	if page < 12: index= page - 1
-	elif index == 1:index += 10
+	elif index < 2:index += 10
 
 	str_index = str(index)
 	if len(str_index) == 1: str_index = '0' + str_index
