@@ -1,0 +1,48 @@
+---
+title: "first-explorations"
+author: "rhc"
+date: "August 13, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Transparência de dados públicos.
+
+Projeto desenvolvido por voluntários na área de transparência de dados públicos. *@BrunoTuy @ladeia @georgevbsantiago @fargolo @gomex @abade @raulhc*   
+```{r, warning=F,echo=F}
+library(magrittr)
+library(dplyr)
+library(ggplot2)
+library(plotly)
+library(DT)
+options(scipen=5)
+```
+
+```{r, warning=TRUE,echo=T}
+tcm_df <- read.csv2("../data/TCMBa.csv")
+
+tcm_df$valor_do_pagamento %<>%  as.character %>% as.numeric
+
+tcm_df %>% 
+  group_by(nm_favorecido, 
+           Fonte = nm_fonte_de_recurso_gestor_2,
+           Ação = nm_acao,
+           nm_natureza_da_despesa_tcm) %>% 
+  summarise_at(vars(valor_do_pagamento), 
+               funs(sum(.,na.rm=T))) %>% 
+  .[order(.$valor_do_pagamento,decreasing=T),] %>% 
+  datatable(colnames = c("Favorecido","Fonte","Ação","Natureza","Valor (R$)"))
+
+dens_poderes <- ggplot(tcm_df,aes(x=valor_do_pagamento,
+                                  fill=poder))+
+  geom_density(alpha=0.5)+
+  scale_x_continuous(breaks=round(seq(min(tcm_df$valor_do_pagamento), max(tcm_df$valor_do_pagamento), by = 10000),1))+
+  xlab("Valor")+ylab("Densidade relativa")+
+  ggtitle("Densidade por valores até R$25.000,00")
+
+ggplotly(dens_poderes)
+```
+
