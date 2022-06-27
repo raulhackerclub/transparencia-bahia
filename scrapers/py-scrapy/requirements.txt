@@ -1,2 +1,2 @@
 wheel  == 0.31.1
-scrapy == 1.5.1
+scrapy == 1.8.1
